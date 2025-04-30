@@ -1,0 +1,120 @@
+/* @font-face {
+    font-family: "Linden-Hill";
+    src: url(/LindenHill-webfont.ttf);
+} */
+
+body {
+    margin-inline: 60px;
+    background-color:rgb(253, 253, 240);
+}
+
+.intro {
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#my-pic {
+    border-radius: 50%;
+    margin-right: 30px;
+    border-start-start-radius: 80%;
+    border-bottom-right-radius: 80%;
+    border-color: cornflowerblue;
+}
+
+#my-name {
+    font-family:'Libre Baskerville', serif;
+    font-size: 50px;
+    color:rgb(100, 149, 237);
+}
+
+nav {
+    text-align: right;
+    background-color: rgb(253, 253, 240);
+    padding: 30px;
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0; */
+}
+
+.navigation a {
+    font-family:'Libre Baskerville', serif;
+    font-size: 20px;
+    text-align: center;
+    color:cornflowerblue;
+    text-decoration:none;
+    padding: 40px;
+}
+
+#current {
+    /* font-style: italic; */
+    text-decoration-line: underline;
+    text-underline-offset: 8px;
+}
+
+  
+a:hover {
+    color:darkslateblue;
+    text-decoration-line: underline;
+    text-underline-offset: 8px;
+    transition: color 0.4s;
+}
+
+.paragraph {
+    font-family: 'Work Sans';
+    font-size: 18px;
+}
+
+
+p {
+    color:black;
+}
+
+.imgs {
+    text-align: center;
+    display: block;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:min-content;
+    padding-left: 100px;
+}
+
+img {
+    width: 400px;
+    padding: 20px;
+    vertical-align: middle;
+}
+
+/* .rotating {
+    position: absolute;
+    margin:-60px 0 0 -60px;
+    animation: spin 3s linear infinite;
+} */
+
+/* .shooting-star {
+    position: absolute;
+} */
+
+#shooting-star {
+    position:relative;
+    bottom: 45px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+/* #star-curve {
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    transform:translateX(345px) translateY(-65px) rotate(15deg);
+} */
+
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
