@@ -137,7 +137,7 @@ img {
     font-size: 20px;
 }
 
-#link {
+a {
     color: black;
     text-decoration: none;
 }
