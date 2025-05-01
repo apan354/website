@@ -112,6 +112,36 @@ img {
     transform:translateX(345px) translateY(-65px) rotate(15deg);
 } */
 
+.gallery {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-and-cat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.square {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.category {
+    font-family: 'Work Sans';
+    font-size: 20px;
+}
+
+#link {
+    color: black;
+    text-decoration: none;
+}
+
 @keyframes spin { 
     100% { 
         -webkit-transform: rotate(360deg); 
