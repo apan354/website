@@ -25,6 +25,7 @@ body {
 
 #my-name {
     font-family:'Libre Baskerville', serif;
+    font-weight:bold;
     font-size: 50px;
     color:rgb(100, 149, 237);
 }
@@ -50,16 +51,24 @@ nav {
 
 #current {
     /* font-style: italic; */
-    text-decoration-line: underline;
-    text-underline-offset: 8px;
+    /* text-decoration-line: underline;
+    text-underline-offset: 8px; */
+    background-image: url("assets/squiggle.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position:center 65px;
 }
 
   
 a:hover {
-    color:darkslateblue;
-    text-decoration-line: underline;
-    text-underline-offset: 8px;
-    transition: color 0.4s;
+    /* color:darkslateblue; */
+    /* text-decoration-line: underline;
+    text-underline-offset: 8px; */
+    background-image: url("assets/squiggle.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center 65px;
+    /* transition: color 0.4s; */
 }
 
 .paragraph {
@@ -130,6 +139,10 @@ img {
     width: 350px;
     height: 350px;
     object-fit: cover;
+}
+
+.category:hover {
+   color: cornflowerblue;
 }
 
 .category {
