@@ -53,9 +53,9 @@ nav {
     /* font-style: italic; */
     /* text-decoration-line: underline;
     text-underline-offset: 8px; */
-    background-image: url("assets/squiggle.png");
+    background-image: url("../assets/squiggle.png");
     background-repeat: no-repeat;
-    background-size: 100px;
+    background-size: 80px;
     background-position:center 65px;
 }
 
@@ -64,9 +64,9 @@ a:hover {
     /* color:darkslateblue; */
     /* text-decoration-line: underline;
     text-underline-offset: 8px; */
-    background-image: url("assets/squiggle.png");
+    background-image: url("../assets/squiggle.png");
     background-repeat: no-repeat;
-    background-size: 100px;
+    background-size: 80px;
     background-position: center 65px;
     /* transition: color 0.4s; */
 }
