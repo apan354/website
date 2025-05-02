@@ -73,7 +73,12 @@ a:hover {
 
 .paragraph {
     font-family: 'Work Sans';
-    font-size: 18px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-inline: 250px;
+    padding-bottom: 40px;
+    text-align: center;
 }
 
 
@@ -91,7 +96,7 @@ p {
 }
 
 img {
-    width: 400px;
+    width: 450px;
     padding: 20px;
     vertical-align: middle;
 }
