@@ -94,12 +94,17 @@ p {
 }
 
 .imgs {
-    text-align: center;
     display: block;
+    text-align: center;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    width:min-content;
-    padding-left: 100px;
+}
+
+.gall-img {
+    width:fit-content;
+    height: 500px;
+    padding: 30px;
+    object-fit: cover;
 }
 
 img {
