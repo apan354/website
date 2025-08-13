@@ -4,30 +4,38 @@
 } */
 
 body {
-    margin-inline: 60px;
-    background-color:rgb(253, 253, 240);
+    margin: 0px 0px;
+    background-color:#fdfdf0;
 }
 
 .intro {
-    padding: 30px 0px;
+    padding: 70px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-image: url("images/lake.jpg");
+    background-size: cover;
+    background-position-y: 60%; */
+}
+
+#profile {
+    position: relative;
 }
 
 #oval {
     position: absolute;
-    max-width: 90%;
-    max-height: 67%;
-    left: 260px;
+    height: 103%;
+    width: 85%;
+    left: 7px;
+    top: -30px;
 }
 
 #my-pic {
+    position: relative;
     border-radius: 50%;
     margin-right: 30px;
     border-start-start-radius: 80%;
     border-bottom-right-radius: 80%;
-    border-color: cornflowerblue;
 }
 
 #my-name {
@@ -39,7 +47,7 @@ body {
 
 nav {
     text-align: right;
-    background-color: rgb(253, 253, 240);
+    background-color: #fdfdf0;
     padding: 30px;
     /* position: fixed;
     top: 0;
@@ -83,8 +91,8 @@ a:hover {
     font-size: 20px;
     display: flex;
     justify-content: center;
-    padding-inline: 250px;
-    padding-bottom: 40px;
+    padding: 50px 300px;
+    /* padding-bottom: 40px; */
     text-align: center;
 }
 
@@ -138,18 +146,46 @@ img {
     transform:translateX(345px) translateY(-65px) rotate(15deg);
 } */
 
+#portfolio {
+    background-image: url("images/sky.jpeg");
+    background-size: cover;
+}
+
+#portfolio-banner {
+    padding: 60px 0px;
+    /* background-image: url("images/lake.jpg");
+    background-size: cover;
+    background-position-y: 60%; */
+}
+
+.page-title {
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    color: #fdfdf0;
+}
+
 .gallery {
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 20px;
 }
 
 .image-and-cat {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px;
+    padding: 3px 3px 30px;
+    margin: 30px;
+    background-color: #fdfdf0;
+}
+
+.image-and-cat:hover {
+    box-shadow: 0px 10px 30px #00000076;
+    transform: rotate(3deg);
+    transition: transform 0.5s;
 }
 
 .square {
@@ -158,13 +194,10 @@ img {
     object-fit: cover;
 }
 
-.category:hover {
-   color: cornflowerblue;
-}
-
 .category {
     font-family: 'Work Sans';
     font-size: 20px;
+    padding-top: 10px;
 }
 
 a {
