@@ -47,7 +47,6 @@ body {
 
 nav {
     text-align: right;
-    background-color: #fdfdf0;
     padding: 30px;
     /* position: fixed;
     top: 0;
@@ -106,14 +105,22 @@ p {
     text-align: center;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-flow: row;
 }
 
 .gall-img {
-    width:fit-content;
-    height: 500px;
+    width: fit-content;
+    height: 400px;
     padding: 30px;
     object-fit: cover;
+    transition: height 1s ease;
 }
+
+.gall-img:hover {
+    height: 500px;
+}
+
+
 
 img {
     width: 450px;
@@ -148,7 +155,8 @@ img {
 
 #portfolio {
     background-image: url("images/sky.jpeg");
-    background-size: cover;
+    background-size:cover;
+    background-position-y: 20%;
 }
 
 #portfolio-banner {
@@ -163,6 +171,8 @@ img {
     text-align: center;
     font-family: 'Libre Baskerville', serif;
     color: #fdfdf0;
+    margin: 0;
+    padding-block: 120px 90px;
 }
 
 .gallery {
@@ -170,7 +180,7 @@ img {
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px;
+    padding-block: 0px 70px;
 }
 
 .image-and-cat {
