@@ -5,7 +5,8 @@
 
 body {
     margin: 0px 0px;
-    background-color:#fdfdf0;
+    background-color:white;
+    /* background-color:#fdfdf0; */
 }
 
 .intro-section {
@@ -13,7 +14,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-image: url("images/ocean.png");
+    /* background-image: url("images/windowView.gif");
     background-size: cover;
     background-position: center; */
 }
@@ -36,8 +37,8 @@ body {
     position: absolute;
     height: 103%;
     width: 85%;
-    left: 7px;
-    top: -30px;
+    left: 25px;
+    top: -10px;
 }
 
 #my-pic {
@@ -46,13 +47,16 @@ body {
     margin-right: 30px;
     border-start-start-radius: 80%;
     border-bottom-right-radius: 80%;
+    width: 450px;
+    padding: 20px;
+    vertical-align: middle;
 }
 
 #my-name {
     font-family:'Libre Baskerville', serif;
     font-weight:bold;
     font-size: 50px;
-    color:rgb(100, 149, 237);
+    color:#6495ed;
 }
 
 #shooting-star {
@@ -99,7 +103,7 @@ nav {
     background-position:center 65px;
 }
 
-  
+
 a:hover {
     /* color:darkslateblue; */
     /* text-decoration-line: underline;
@@ -117,7 +121,8 @@ h1 {
 }
 
 p {
-    color:black;
+    font-family:'Work Sans';
+    color: black;
 }
 
 .imgs {
@@ -131,22 +136,24 @@ p {
 .gall-img {
     width: fit-content;
     height: 400px;
-    padding: 30px;
+    padding: 0px;
+    margin: 20px;
     object-fit: cover;
     transition: height 1s ease;
 }
 
 .gall-img:hover {
     height: 500px;
+    box-shadow: 0px 10px 30px #00000076;
 }
 
 
 
-img {
+/* img {
     width: 450px;
     padding: 20px;
     vertical-align: middle;
-}
+} */
 
 /* .rotating {
     position: absolute;
@@ -194,16 +201,19 @@ img {
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-block: 0px 70px;
+    padding: 60px 0px;
+    margin: 0px 170px;
 }
 
 .image-and-cat {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3px 3px 30px;
     margin: 30px;
-    background-color: #fdfdf0;
+    background-color: white;
+    /* border: 1px solid black; */
+    /* box-shadow: 0px 10px 30px #00000076 ; */
+    padding: 20px;
 }
 
 .image-and-cat:hover {
@@ -213,15 +223,15 @@ img {
 }
 
 .square {
-    width: 350px;
-    height: 350px;
+    width: 270px;
+    height: 270px;
     object-fit: cover;
+    padding-bottom: 15px;
 }
 
 .category {
     font-family: 'Work Sans';
-    font-size: 20px;
-    padding-top: 10px;
+    font-size: 16px;
 }
 
 a {
@@ -229,9 +239,85 @@ a {
     text-decoration: none;
 }
 
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
+.banner {
+    padding: 0%;
+    height: 100%;
+    width: 100%;
 }
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
+
+
+h2 {
+    font-family:'Libre Baskerville';
+}
+
+.web-work {
+    padding: 0px 50px;
+    margin: 30px 50px;
+    /* border: 2px solid #6495ed; */
+}
+
+.web-imgs {
+    display: flex;
+    flex-direction:row;
+    /* flex-flow:row; */
+    gap: 20px;
+    align-items: stretch;
+    margin-top: 50px;
+}
+
+.web-imgs img {
+    width: 40%;
+    height: 100%;
+    object-fit:cover;
+    border: 1px solid black;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 60px;
+}
+
+.branding {
+    /* display:inline-block;
+    line-height: 3;
+    column-count: 2;
+    column-gap: 60px; */
+    flex: 1 1 auto;
+    height: 180px;
+}
+.branding img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    /* width: 100%;
+    height: auto;
+    object-fit: cover; */
+    padding: 20px;
+    border: 1px solid black;
+}
+
+/* #gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+We then allow .items to expand as much as they'd like on their row, which has a fixed height of 100px or another value of your choice:
+
+.item {
+  flex: 1 1 auto;
+  height: 100px;
+}
+Finally, set object-fit: cover for the images. This, along with height: 100% and width: 100%, ensure that they will always touch two sides and overflow the other two:
+
+.item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+} */
