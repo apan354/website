@@ -279,45 +279,23 @@ h2 {
     border: 1px solid black;
 }
 
-#gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0px 60px;
-}
-
 .branding {
-    /* display:inline-block;
+    display:inline-block;
     line-height: 3;
     column-count: 2;
-    column-gap: 60px; */
-    flex: 1 1 auto;
-    height: 180px;
+    column-gap: 60px;
+    width: initial;
+    margin-right: 50px;
+    /* flex: 1 1 auto;
+    height: 180px; */
 }
 .branding img {
-    object-fit: contain;
+    /* object-fit: contain;
     height: 100%;
+    width: 100%; */
     width: 100%;
-    /* width: 100%;
     height: auto;
-    object-fit: cover; */
+    object-fit: cover;
     padding: 20px;
     border: 1px solid black;
 }
-
-/* #gallery {
-  display: flex;
-  flex-wrap: wrap;
-}
-We then allow .items to expand as much as they'd like on their row, which has a fixed height of 100px or another value of your choice:
-
-.item {
-  flex: 1 1 auto;
-  height: 100px;
-}
-Finally, set object-fit: cover for the images. This, along with height: 100% and width: 100%, ensure that they will always touch two sides and overflow the other two:
-
-.item img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-} */
