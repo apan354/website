@@ -142,31 +142,30 @@ p {
 }
 
 .imgs {
-    display: block;
-    text-align: center;
-    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
     flex-wrap: wrap;
-    flex-flow: row;
+    max-width: 100%;
 }
 
 .gall-img {
-    width: fit-content;
     height: 400px;
     padding: 0px;
     margin: 20px;
     object-fit: cover;
-    transition: height 1s ease;
-    /* border: 1px solid black; */
+    transition: transform 0.7s ease, box-shadow 0.7s ease;
     background-color: white;
 }
 
 .gall-img:hover {
-    height: 500px;
-    box-shadow: 0px 10px 30px #00000076;
+    /* height: 500px; */
+    box-shadow: 0px 0px 30px 10px #000000a3;
+    transform: scale(1.2);
 }
 
 #portfolio {
-    /* background-image: url("images/sky.jpeg"); */
+    background-image: url("images/sky.jpeg");
     background-size:cover;
     background-position-y: 20%;
 }
@@ -185,6 +184,7 @@ p {
     flex-direction:row;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 70px;
     margin: 0px 170px;
 }
 
