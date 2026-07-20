@@ -25,3 +25,22 @@ $(".gall-img").hover(
         $(this).css("transform-origin", "center center");
     }
 );
+
+// $("#pear a").on("click", function(evt) {
+//     evt.preventDefault();
+//     $(".popup").show();
+// });
+
+// $(".close-btn").on("click", function() {
+//     $(".popup").hide();
+// });
+
+$("#pear img, #pear h2").click(function (evt) {
+    evt.preventDefault();
+    $("#pear-popup").show();
+});
+
+$(".close-btn").click(function() {
+    $("#pear-popup").hide()
+    // $(".popup").css("display", "none");
+});
